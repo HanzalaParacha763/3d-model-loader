@@ -1,3 +1,5 @@
+import Link from 'next/link';
+
 export default function Home() {
   return (
     <div className="min-h-screen flex items-center justify-center bg-gradient-to-br from-white via-slate-100 to-gray-200 px-6">
@@ -8,12 +10,12 @@ export default function Home() {
         <p className="text-gray-600 text-lg mb-6">
           This is just a model loader page. Head over to the model loader page to upload and view your 3D file.
         </p>
-        <a
+        <Link
           href="/ModelLoaderPage"
           className="inline-block px-6 py-3 text-white bg-black hover:bg-gray-800 transition-all duration-300 rounded-xl shadow-lg font-medium"
         >
           Go to Model Loader
-        </a>
+        </Link>
       </div>
     </div>
   );
